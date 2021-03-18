@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@600&display=swap" rel="stylesheet">
+    <title>Hotels</title>
+</head>
+<body>
+    <header id="head">
+      <script>
+        let random=Math.floor(Math.random()*3)
+        console.log(random)
+        switch (random) {
+            case 0:
+                document.getElementById('head').style.backgroundImage='url(./images/bg/BG1.png)'
+                break;
+            case 1:
+                document.getElementById('head').style.backgroundImage='url(./images/bg/BG2.png)'
+                break;
+            case 2:
+                document.getElementById('head').style.backgroundImage='url(./images/bg/BG3.png)'
+                break;
+            default:
+                break;
+        }
+      </script>
+        <nav class="navbar navbar-expand-lg navbar-dark ">
+            <div class="container">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto  mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link colored" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="#">About Us</a>
+                  </li>                 
+                  <li class="nav-item">
+                    <a class="nav-link active" href="#" tabindex="-1" aria-disabled="true">Blog</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="#" tabindex="-1" aria-disabled="true">Contact</a>
+                  </li>
+                </ul>
+                <form class="d-flex ms-lg-5">
+                    <ul  class="navbar-nav me-auto mb-2 mb-lg-0"> 
+                        <li class="nav-item dropdown ms-lg-5 me-lg-1" style="list-style: none;">
+                            <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Eng
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                              <li><a class="dropdown-item" href="#">Tr</a></li>
+                              <li><a class="dropdown-item" href="#">Es</a></li>
+                            </ul>
+                          </li>
+                          <li class="nav-item me-lg-3">
+                            <a class="nav-link active" href="#">Log in</a>
+                          </li>   
+                          <button class="nav-item nav-link sign px-3 border-0 text-white">Sign up</button>
+                    </ul>
+                   
+                </form>
+              </div>
+            </div>
+          </nav>
+        <div class="container py-6" >
+            <div class="row  d-none d-lg-block py-6" >
+                <div class="col py-6">
+                    
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <h2 class="header-text ">
+                        Book With Us And <br>
+                        Enjoy Your Journey!
+                    </h2>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container shadow-lg bg-white" style="top:-7.5vh; position: relative;">
+        <div class="row">
+            <div class="col-md-3 boxing">
+                <h6 class="baslik">Destination</h6>
+                <img src="./images/ico//Location.png" alt="">
+                <p class="d-inline-block">
+                    Where you Going
+                </p>
+            </div>
+            <div class="col-md-3 boxing">
+                <h6 class="baslik">Check in - Check out</h6>
+                <img src="./images/ico/Calendar.png" alt="">
+                <p class="d-inline">
+                    mm/dd/yyyy
+                </p>
+                <p class="d-inline mx-lg-2 mx-2 mx-md-0">
+                    -
+                </p>
+                <p class="d-inline">
+                    mm/dd/yyyy
+                </p>
+            </div>
+            <div class="col-md-3 boxing">
+                <h6 class="baslik">Travellers</h6>
+                <img src="./images/ico/User.png" alt="">
+                <p class="d-inline-block">
+                    Number of people
+                </p>
+            </div>
+            <div class="col-md-3 py-5 d-flex align-items-center kutu-turuncu justify-content-center">
+                <h6 class="turuncu-yazi text-white">
+                    Search
+                </h6>
+            </div>
+        </div>
+    </div>
+    <section class="mb-5">
+      <div class="container">
+        <div class="row mb-5">
+          <div  class="col text-center mx-auto">
+            <h3 class="baslik2">Why you book?</h3>
+          </div>
+        </div>
+        <div class="row d-flex justify-content-between">
+          <div class="col-md-3 mb-5 mb-md-0  shadow-lg py-5 text-center yuvarla">
+            <img src="./images/ico/carpi.png" class="mb-2" alt="">
+            <h6 class="my-3 kartyazi">Free cancellation</h6>
+            <p class="kartp text-muted">on most hotels</p>
+          </div>
+          <div class="col-md-3 my-2 my-md-0  shadow-lg py-5 text-center yuvarla">
+           <img src="./images/ico/etiket.png" class="mb-2" alt=""> 
+           <h6 class="my-3 kartyazi">Free cancellation</h6>
+           <p class="kartp text-muted">on most hotels</p>
+          </div>
+          <div class="col-md-3 mt-5 mt-md-0  shadow-lg py-5 text-center yuvarla"> 
+           <img src="./images/ico/madalyon.png" class="mb-2" alt=""> 
+           <h6 class="my-3 kartyazi">Free cancellation</h6>
+           <p class="kartp text-muted">on most hotels</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="pb-5" style="background-color: #F6F6F6;">
+      <div class="container py-5">
+        <div class="row">
+          <div class="col-4 text-center">
+            <h1 class="feat mt-4 te">Featured Hotels</h1>
+          </div>
+          <div class="col-6 offset-2">
+            <div class="d-flex justify-content-end">
+              <img src="./images/ico/prev.png" width="120" type="button" data-bs-target="#carouselExampleControls"  data-bs-slide="prev">
+              <img src="./images/ico/next.png" width="120" type="button" data-bs-target="#carouselExampleControls"  data-bs-slide="next">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="row d-flex justify-content-center">
+                  <div class="col-md-4 mb-4 mb-md-0">
+                    <div class="card rounded-5 border-0" >
+                      <div class="m-4">
+                      <img src="./images/hotels/hotel1.png" class="card-img-top" alt="...">
+                    </div>
+                      <div class="card-body">
+                        <div class="row">
+                          <div class="col-6 d-flex align-items-center justify-content-start">
+                           <h3 class="d-inline hcard">Lux Hotel</h3>
+                          </div>
+                          <div class="col-6 align-items-center d-flex justify-content-end">
+                            <h3  style="color: #FF9800;" class="hcard d-inline">$200/n</h3>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-1">
+                          <img src="./images/ico/Location.png" style="width: 25px;" alt="">
+                          </div>
+                          <div class="col-8">
+                          <p >6 Avenue SL. Toronto</p>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-1">
+                          <img src="./images/ico/Star.png" style="width: 25px;" alt="">
+                          </div>
+                          <div class="col-8">
+                          <p >648 Review</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4 mb-4 mb-md-0 ">
+                    <div class="card rounded-5 border-0" >
+                      <div class="m-4">
+                        <img src="./images/hotels/hotel2.png" class="card-img-top" alt="...">
+                      </div>
+                      <div class="card-body">
+                        <div class="row">
+                          <div class="col-6 d-flex align-items-center justify-content-start">
+                           <h3 class="d-inline hcard">Lux Hotel</h3>
+                          </div>
+                          <div class="col-6 align-items-center d-flex justify-content-end">
+                            <h3  style="color: #FF9800;" class="hcard d-inline">$200/n</h3>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-1">
+                          <img src="./images/ico/Location.png" style="width: 25px;" alt="">
+                          </div>
+                          <div class="col-8">
+                          <p >6 Avenue SL. Toronto</p>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-1">
+                          <img src="./images/ico/Star.png" style="width: 25px;" alt="">
+                          </div>
+                          <div class="col-8">
+                          <p >648 Review</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4 mb-4 mb-md-0 ">
+                    <div class="card rounded-5 border-0" >
+                      <div class="m-4">
+                      <img src="./images/hotels/hotel3.png" class="card-img-top" alt="...">
+                      </div>
+                      <div class="card-body">
+                        <div class="row">
+                          <div class="col-6 d-flex align-items-center justify-content-start">
+                           <h3 class="d-inline hcard">Lux Hotel</h3>
+                          </div>
+                          <div class="col-6 align-items-center d-flex justify-content-end">
+                            <h3  style="color: #FF9800;" class="hcard d-inline">$200/n</h3>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-1">
+                          <img src="./images/ico/Location.png" style="width: 25px;" alt="">
+                          </div>
+                          <div class="col-8">
+                          <p >6 Avenue SL. Toronto</p>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-1">
+                          <img src="./images/ico/Star.png" style="width: 25px;" alt="">
+                          </div>
+                          <div class="col-8">
+                          <p >648 Review</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>                    
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row d-flex justify-content-center">
+                  <div class="col-md-4 mb-4 mb-md-0 ">
+                    <div class="card rounded-5 border-0" >
+                      <div class="m-4">
+                        <img src="./images/hotels/hotel2.png" class="card-img-top" alt="...">
+                      </div>
+                      <div class="card-body">
+                        <div class="row">
+                          <div class="col-6 d-flex align-items-center justify-content-start">
+                           <h3 class="d-inline hcard">Lux Hotel</h3>
+                          </div>
+                          <div class="col-6 align-items-center d-flex justify-content-end">
+                            <h3  style="color: #FF9800;" class="hcard d-inline">$200/n</h3>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-1">
+                          <img src="./images/ico/Location.png" style="width: 25px;" alt="">
+                          </div>
+                          <div class="col-8">
+                          <p >6 Avenue SL. Toronto</p>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-1">
+                          <img src="./images/ico/Star.png" style="width: 25px;" alt="">
+                          </div>
+                          <div class="col-8">
+                          <p >648 Review</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4 mb-4 mb-md-0 ">
+                    <div class="card rounded-5 border-0" >
+                      <div class="m-4">
+                      <img src="./images/hotels/hotel3.png" class="card-img-top" alt="...">
+                      </div>
+                      <div class="card-body">
+                        <div class="row">
+                          <div class="col-6 d-flex align-items-center justify-content-start">
+                           <h3 class="d-inline hcard">Lux Hotel</h3>
+                          </div>
+                          <div class="col-6 align-items-center d-flex justify-content-end">
+                            <h3  style="color: #FF9800;" class="hcard d-inline">$200/n</h3>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-1">
+                          <img src="./images/ico/Location.png" style="width: 25px;" alt="">
+                          </div>
+                          <div class="col-8">
+                          <p >6 Avenue SL. Toronto</p>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-1">
+                          <img src="./images/ico/Star.png" style="width: 25px;" alt="">
+                          </div>
+                          <div class="col-8">
+                          <p >648 Review</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>                    
+                  </div>
+                  <div class="col-md-4 mb-4 mb-md-0">
+                    <div class="card rounded-5 border-0" >
+                      <div class="m-4">
+                      <img src="./images/hotels/hotel1.png" class="card-img-top" alt="...">
+                    </div>
+                      <div class="card-body">
+                        <div class="row">
+                          <div class="col-6 d-flex align-items-center justify-content-start">
+                           <h3 class="d-inline hcard">Lux Hotel</h3>
+                          </div>
+                          <div class="col-6 align-items-center d-flex justify-content-end">
+                            <h3  style="color: #FF9800;" class="hcard d-inline">$200/n</h3>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-1">
+                          <img src="./images/ico/Location.png" style="width: 25px;" alt="">
+                          </div>
+                          <div class="col-8">
+                          <p >6 Avenue SL. Toronto</p>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-1">
+                          <img src="./images/ico/Star.png" style="width: 25px;" alt="">
+                          </div>
+                          <div class="col-8">
+                          <p >648 Review</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row d-flex justify-content-center">
+                  <div class="col-md-4 mb-4 mb-md-0 ">
+                    <div class="card rounded-5 border-0" >
+                      <div class="m-4">
+                      <img src="./images/hotels/hotel3.png" class="card-img-top" alt="...">
+                      </div>
+                      <div class="card-body">
+                        <div class="row">
+                          <div class="col-6 d-flex align-items-center justify-content-start">
+                           <h3 class="d-inline hcard">Lux Hotel</h3>
+                          </div>
+                          <div class="col-6 align-items-center d-flex justify-content-end">
+                            <h3  style="color: #FF9800;" class="hcard d-inline">$200/n</h3>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-1">
+                          <img src="./images/ico/Location.png" style="width: 25px;" alt="">
+                          </div>
+                          <div class="col-8">
+                          <p >6 Avenue SL. Toronto</p>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-1">
+                          <img src="./images/ico/Star.png" style="width: 25px;" alt="">
+                          </div>
+                          <div class="col-8">
+                          <p >648 Review</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>                    
+                  </div>
+                  <div class="col-md-4 mb-4 mb-md-0">
+                    <div class="card rounded-5 border-0" >
+                      <div class="m-4">
+                      <img src="./images/hotels/hotel1.png" class="card-img-top" alt="...">
+                    </div>
+                      <div class="card-body">
+                        <div class="row">
+                          <div class="col-6 d-flex align-items-center justify-content-start">
+                           <h3 class="d-inline hcard">Lux Hotel</h3>
+                          </div>
+                          <div class="col-6 align-items-center d-flex justify-content-end">
+                            <h3  style="color: #FF9800;" class="hcard d-inline">$200/n</h3>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-1">
+                          <img src="./images/ico/Location.png" style="width: 25px;" alt="">
+                          </div>
+                          <div class="col-8">
+                          <p >6 Avenue SL. Toronto</p>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-1">
+                          <img src="./images/ico/Star.png" style="width: 25px;" alt="">
+                          </div>
+                          <div class="col-8">
+                          <p >648 Review</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4 mb-4 mb-md-0 ">
+                    <div class="card rounded-5 border-0" >
+                      <div class="m-4">
+                        <img src="./images/hotels/hotel2.png" class="card-img-top" alt="...">
+                      </div>
+                      <div class="card-body">
+                        <div class="row">
+                          <div class="col-6 d-flex align-items-center justify-content-start">
+                           <h3 class="d-inline hcard">Lux Hotel</h3>
+                          </div>
+                          <div class="col-6 align-items-center d-flex justify-content-end">
+                            <h3  style="color: #FF9800;" class="hcard d-inline">$200/n</h3>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-1">
+                          <img src="./images/ico/Location.png" style="width: 25px;" alt="">
+                          </div>
+                          <div class="col-8">
+                          <p >6 Avenue SL. Toronto</p>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-1">
+                          <img src="./images/ico/Star.png" style="width: 25px;" alt="">
+                          </div>
+                          <div class="col-8">
+                          <p >648 Review</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>              
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="sct" class="py-6">
+      <div class="container py-5">
+        <div class="row ">
+          <div class="col text-white">
+            <h2 class="feat"> Your world is <br> worth sharing</h2>
+            <p class="yazilimetin my-5">
+              Turn your extra space into <br>
+              your next opportunity
+            </p>
+            <button  class="hcard2 sign border-0 text-light px-5 py-3 rds" >Become a host</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="yuvarlak" class="">
+      <div class="container pt-3">
+        <div class="row pt-5">
+          <div class="text-center my-5">
+            <h2 class="feat"> Popular destinations</h2>
+          </div>
+          <div id="carouselExampleControls2" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="row">
+                  <div class="col-6 offset-1">
+                    <img src="./images/slider/slider1.png" class="img-fluid" alt="">
+                  </div>
+                  <div class="col-5 mt-5">
+                    <h2 class="mt-5 mb-3"> Kuala Lumpur</h2> 
+                    <h6 class="mb-5">10.862 accommodations</h6>                 
+                    <p class="text-muted">
+                      simply dummy text of the printing and typesetting <br>
+                      industry. Lorem Ipsum has been the industry's <br> 
+                      standard dummy text ever since the 1500s, <br> 
+                      when an unknown printer took a
+                    </p>
+                    <button class="px-3 py-2 border-0 rounded-3 mt-3 bgt text-white" >Go <img class="ms-4" src="./images/ico/Vector.png" alt=""></button>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item ">
+                <div class="row">
+                  <div class="col-6 offset-1">
+                    <img src="./images/slider/slider1.png" class="img-fluid" alt="">
+                  </div>
+                  <div class="col-5 mt-5">
+                    <h2 class="mt-5 mb-3"> Kuala Lumpur2</h2> 
+                    <h6 class="mb-5">10.862 accommodations</h6>                 
+                    <p class="text-muted">
+                      simply dummy text of the printing and typesetting <br>
+                      industry. Lorem Ipsum has been the industry's <br> 
+                      standard dummy text ever since the 1500s, <br> 
+                      when an unknown printer took a
+                    </p>
+                    <button class="px-3 py-2 border-0 rounded-3 mt-3 bgt text-white" >Go <img class="ms-4" src="./images/ico/Vector.png" alt=""></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls2"  data-bs-slide="prev">
+              <span class="carousel-control-prev-icon " aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls2"  data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section style="background-color: #F6F6F6;" class="pt-5">
+      <div class="container py-5">
+        <div class="row">
+          <div class="col mx-auto text-center">
+            <h3 class="font mb-4">Subscribe To Get The Latest News About Us</h3>
+            <p class="font2 text-muted">We recommended you to subscribe to our newspaper, enter your email <br> to get daily update about us</p>
+            <div class="row">
+              <div class="col-8 offset-2">
+                <div class="input-group mb-3 d-none d-lg-flex">
+                  <input type="text" class="form-control py-4 border-0 rounded-5" placeholder="Enter your email adress" >
+                  <button class="btn bgt font text-white rounded-4  px-md-4 mt-2" style="position: absloute; left: -10rem; height: 50px;" type="button" >Subscribe</button>
+                </div>
+                <div class="input-group mb-3 d-lg-none">
+                  <input type="text" class="form-control py-4 border-0 rounded-5" placeholder="Enter your email adress" >
+                  <button class="btn bgt font2 text-white rounded-4 px-0  px-sm-1 mt-2" style="position: absloute; left: -4rem; height: 50px;" type="button" >Subscribe</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <div class="row mt-5">
+          <div class="col my-5">
+            <h1 class="feat">Inspiration for future getaways</h1>
+          </div>
+          <div class="row mb-5">
+            <div class="col-3 " id="for1">
+              <div  class="row">
+                <h3 class="fontgovde">
+                   Arts & culture
+                </h3>
+              </div>
+              <div class="row" id="cizgi1" style="border-top: 2px solid black;"></div>
+              <div class="row my-2 mb-3" id="kopya">
+                <h4 class="forparagraf">
+                  Phoneix
+                </h4>
+                <p class="foryazi text-muted">
+                  Arizona
+                </p>
+              </div>
+              <script>
+                var kutu=document.getElementById('for1')
+                for (let index = 0; index < 9; index++) {
+                  var kopya=document.createElement('div')
+                  kopya.innerHTML=document.getElementById('kopya').innerHTML
+                  kopya.classList=document.getElementById('kopya').classList
+                  kutu.appendChild(kopya.cloneNode(true))
+                }
+              </script>
+            </div>
+            <div class="col-3 " id="for2">
+              <div  class="row">
+                <h3 class="fontgovde">
+                  Destinations  out 
+                </h3>
+              </div>
+              <div class="row" id="cizgi2" style="border-top: 2px solid black;"></div>
+              <div class="row my-2 mb-3" id="kopya2">
+                <h4 class="forparagraf">
+                  Phoneix
+                </h4>
+                <p class="foryazi">
+                  Arizona
+                </p>
+              </div>
+              <script>
+                var kutu=document.getElementById('for2')
+                for (let index = 0; index < 9; index++) {
+                  var kopya=document.createElement('div')
+                  kopya.innerHTML=document.getElementById('kopya2').innerHTML
+                  kopya.classList=document.getElementById('kopya2').classList
+                  kutu.appendChild(kopya.cloneNode(true))
+                }
+              </script>
+            </div>
+            <div class="col-3 " id="for3">
+              <div  class="row">
+                <h3 class="fontgovde">
+                  Mountain cabins
+                  
+                </h3>
+              </div>
+              <div class="row" id="cizgi3" style="border-top: 2px solid black;"></div>
+              <div class="row my-2 mb-3" id="kopya">
+                <h4 class="forparagraf">
+                  Phoneix
+                </h4>
+                <p class="foryazi">
+                  Arizona
+                </p>
+              </div>
+              <script>
+                var kutu=document.getElementById('for3')
+                for (let index = 0; index < 9; index++) {
+                  var kopya=document.createElement('div')
+                  kopya.innerHTML=document.getElementById('kopya').innerHTML
+                  kopya.classList=document.getElementById('kopya').classList
+                  kutu.appendChild(kopya.cloneNode(true))
+                }
+              </script>
+            </div>       
+            <div class="col-3 " id="for4">
+              <div  class="row">
+                <h3 class="fontgovde">
+                  Destination &
+                  Art
+                </h3>
+              </div>
+              <div class="row" id="cizgi4" style="border-top: 2px solid black;"></div>
+              <div class="row my-2 mb-3" id="kopya">
+                <h4 class="forparagraf">
+                  Phoneix
+                </h4>
+                <p class="foryazi">
+                  Arizona
+                </p>
+              </div>
+              <script>
+                var kutu=document.getElementById('for4')
+                for (let index = 0; index < 9; index++) {
+                  var kopya=document.createElement('div')
+                  kopya.innerHTML=document.getElementById('kopya').innerHTML
+                  kopya.classList=document.getElementById('kopya').classList
+                  kutu.appendChild(kopya.cloneNode(true))
+                }
+              </script>
+            </div>    
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="py-5" style="background-color: #F6F6F6;"> 
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <div class="">
+            <h4 class="footbaslik mb-5">ABOUT</h4>
+            </div>   
+            <div class="text-muted">
+              <p>How Airbnb works </p>
+              <p>Newsroom Investors </p>
+              <p>Airbnb Plus</p>
+              <p>Airbnb Luxe</p>
+              <p>HotelTonight</p>
+              <p>Airbnb for Work </p>
+              <p>Made possible by Hosts</p>
+              <p>Olympics</p>
+              <p>Careers </p>
+              <p>Founders' Letter</p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <h4 class="footbaslik mb-5">COMMUNITY</h4>
+            <div class="text-muted">
+              <p>Airbnb Plus</p>
+              <p>Airbnb Luxe</p>
+              <p>HotelTonight</p>
+              <p>Airbnb for Work </p>
+              <p>Made possible by Hosts</p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <h4 class="footbaslik mb-5">HOST</h4>
+            <div class="text-muted">
+              <p>Airbnb for Work </p>
+              <p>Made possible by Hosts</p>
+              <p>Olympics</p>
+              <p>Careers </p>
+              <p>Founders' Letter</p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <h4 class="footbaslik mb-5">SUPPORT</h4>
+            <div class="text-muted">
+              <p>Airbnb Luxe</p>
+              <p>HotelTonight</p>
+              <p>Airbnb for Work </p>
+              <p>Made possible by Hosts</p>
+              <p>Olympics</p>
+              <p>Careers </p>
+              <p>Founders' Letter</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr style="background-color: white; border: 4px white solid; ">
+      <div class="container"> 
+        <div class="row">
+          <div class="col-6">
+            <p class="text-muted">Copyright © <a class="text-muted" style="text-decoration: none;" href="http://furkanguler.com"> Furkan Güler </a> 2021. All Rights Reserved.</p>
+          </div>
+          <div class="col-6 d-flex justify-content-end">
+            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="24" cy="24" r="24" fill="#FF9800"/>
+              <path d="M29 15.5001C29 15.3674 28.9473 15.2403 28.8536 15.1465C28.7598 15.0527 28.6326 15.0001 28.5 15.0001H26C24.7411 14.9373 23.5086 15.3754 22.5717 16.2186C21.6348 17.0618 21.0698 18.2415 21 19.5001V22.2001H18.5C18.3674 22.2001 18.2402 22.2527 18.1464 22.3465C18.0527 22.4403 18 22.5674 18 22.7001V25.3001C18 25.4327 18.0527 25.5598 18.1464 25.6536C18.2402 25.7474 18.3674 25.8001 18.5 25.8001H21V32.5001C21 32.6327 21.0527 32.7598 21.1464 32.8536C21.2402 32.9474 21.3674 33.0001 21.5 33.0001H24.5C24.6326 33.0001 24.7598 32.9474 24.8536 32.8536C24.9473 32.7598 25 32.6327 25 32.5001V25.8001H27.62C27.7312 25.8017 27.8397 25.7661 27.9285 25.6991C28.0172 25.6321 28.0811 25.5374 28.11 25.4301L28.83 22.8301C28.8499 22.7562 28.8526 22.6787 28.8378 22.6036C28.8231 22.5286 28.7913 22.4579 28.7449 22.397C28.6985 22.3362 28.6388 22.2868 28.5704 22.2526C28.5019 22.2185 28.4265 22.2005 28.35 22.2001H25V19.5001C25.0249 19.2525 25.1411 19.0232 25.326 18.8567C25.5109 18.6903 25.7512 18.5988 26 18.6001H28.5C28.6326 18.6001 28.7598 18.5474 28.8536 18.4536C28.9473 18.3598 29 18.2327 29 18.1001V15.5001Z" fill="white"/>
+            </svg>
+            <svg width="48" class="mx-3" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="24" cy="24" r="24" fill="#FF9800"/>
+              <path d="M20.08 31.9998C21.5587 32.0493 23.0323 31.8018 24.4138 31.2721C25.7952 30.7424 27.0565 29.9411 28.1229 28.9156C29.1894 27.8901 30.0395 26.6613 30.623 25.3017C31.2065 23.9421 31.5115 22.4793 31.52 20.9998C32.1977 20.1612 32.7009 19.1956 33 18.1598C33.0224 18.078 33.0206 17.9914 32.9949 17.9106C32.9691 17.8297 32.9206 17.7581 32.8551 17.7042C32.7896 17.6503 32.7099 17.6165 32.6256 17.6068C32.5413 17.5972 32.456 17.6121 32.38 17.6498C32.0255 17.8205 31.6264 17.8756 31.2389 17.8074C30.8514 17.7392 30.495 17.5512 30.22 17.2698C29.869 16.8854 29.4444 16.5753 28.9713 16.358C28.4982 16.1407 27.9863 16.0206 27.466 16.0047C26.9456 15.9889 26.4274 16.0776 25.942 16.2657C25.4566 16.4538 25.0138 16.7375 24.64 17.0998C24.1282 17.5955 23.7534 18.2151 23.5519 18.8985C23.3503 19.5819 23.329 20.3058 23.49 20.9998C20.14 21.1998 17.84 19.6098 16 17.4298C15.9448 17.3672 15.8725 17.3221 15.7919 17.2999C15.7114 17.2777 15.6262 17.2794 15.5467 17.3049C15.4671 17.3303 15.3967 17.3784 15.344 17.4432C15.2914 17.508 15.2587 17.5867 15.25 17.6698C14.8995 19.6142 15.1524 21.6193 15.9747 23.4159C16.7969 25.2124 18.1493 26.7143 19.85 27.7198C18.7097 29.0276 17.1083 29.8445 15.38 29.9998C15.2875 30.0152 15.202 30.0591 15.1356 30.1254C15.0692 30.1917 15.0252 30.2772 15.0098 30.3698C14.9944 30.4623 15.0083 30.5574 15.0495 30.6417C15.0908 30.726 15.1574 30.7952 15.24 30.8398C16.7436 31.5912 18.3993 31.988 20.08 31.9998Z" fill="white"/>
+            </svg>
+            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="24" cy="24" r="24" fill="#FF9800"/>
+              <path d="M27.15 20.3999C26.3836 20.3973 25.6242 20.5458 24.9152 20.837C24.2062 21.1282 23.5616 21.5563 23.0182 22.0969C22.4749 22.6375 22.0434 23.2799 21.7486 23.9873C21.4538 24.6948 21.3014 25.4535 21.3 26.2199V32.0999C21.3 32.3386 21.3949 32.5676 21.5637 32.7363C21.7324 32.9051 21.9614 32.9999 22.2 32.9999H24.3C24.5387 32.9999 24.7677 32.9051 24.9364 32.7363C25.1052 32.5676 25.2 32.3386 25.2 32.0999V26.2199C25.1999 25.9473 25.2571 25.6778 25.3681 25.4288C25.4791 25.1798 25.6413 24.957 25.8441 24.7749C26.047 24.5928 26.2859 24.4555 26.5454 24.3719C26.8049 24.2884 27.0791 24.2604 27.35 24.2899C27.8361 24.3512 28.2827 24.5886 28.6053 24.9572C28.9278 25.3259 29.1039 25.8001 29.1 26.2899V32.0999C29.1 32.3386 29.1949 32.5676 29.3637 32.7363C29.5324 32.9051 29.7614 32.9999 30 32.9999H32.1C32.3387 32.9999 32.5677 32.9051 32.7364 32.7363C32.9052 32.5676 33 32.3386 33 32.0999V26.2199C32.9987 25.4535 32.8463 24.6948 32.5515 23.9873C32.2567 23.2799 31.8252 22.6375 31.2819 22.0969C30.7385 21.5563 30.0939 21.1282 29.3849 20.837C28.6759 20.5458 27.9165 20.3973 27.15 20.3999Z" fill="white"/>
+              <path d="M18.6 21.2998H15.9C15.4029 21.2998 15 21.7027 15 22.1998V32.0998C15 32.5969 15.4029 32.9998 15.9 32.9998H18.6C19.0971 32.9998 19.5 32.5969 19.5 32.0998V22.1998C19.5 21.7027 19.0971 21.2998 18.6 21.2998Z" fill="white"/>
+              <path d="M17.25 19.5C18.4926 19.5 19.5 18.4926 19.5 17.25C19.5 16.0074 18.4926 15 17.25 15C16.0074 15 15 16.0074 15 17.25C15 18.4926 16.0074 19.5 17.25 19.5Z" fill="white"/>
+            </svg>                 
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+</body>
+</html>

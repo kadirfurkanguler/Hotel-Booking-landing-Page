@@ -1,0 +1,132 @@
+.sign{
+    background-color: #FF9800;
+    border-radius:10px ;
+}
+.rds{
+    border-radius:20px!important ;
+}
+header{
+    padding: 30px 0 0 0  ;
+    background: no-repeat center center;
+    background-size: cover;
+}
+.active{
+    margin: 0 1rem;
+}
+.colored{
+    color: #FF9800!important;
+}
+.ms-5{
+    margin-left: 5rem!important;
+}
+.header-text{
+    font-family: 'Work Sans', sans-serif;
+    color: white;
+    font-weight: bold;
+    word-spacing:10px ;
+    font-size: 50px;
+}
+.py-6{
+    padding: 8rem 0;
+}
+.boxing{
+    height: 15vh;
+    padding-left: 40px!important;
+}
+.baslik{
+    margin-top: 5vh;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+.kutu-turuncu{
+    background-color: #FF9800!important ;
+}
+.turuncu-yazi{
+    font-family: 'Work Sans', sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+
+}
+.baslik2{
+    font-family: 'Work Sans', sans-serif;
+    font-weight: bold;
+    font-size: 50px;
+    word-spacing:10px ;
+}
+.yuvarla{
+    border-radius: 30px;
+}
+.kartyazi{
+    font-family: 'Work Sans', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+.kartp{
+    font-family: 'Work Sans', sans-serif;
+    
+}
+.rounded-5{
+    border-radius: 30px!important;
+}
+.hcard{
+
+    font-family: 'Work Sans', sans-serif;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+.feat{   
+    font-family: 'Work Sans', sans-serif;
+    font-weight: bold;
+    font-size: 3rem;
+}
+#sct{
+    background: url(../images/sections/section.png) no-repeat bottom center;
+    background-size: cover;
+}
+.yazilimetin{
+    font-family: 'Work Sans', sans-serif;
+    font-size: small;
+    font-size: 20px;
+}
+.hcard2{
+
+    font-family: 'Work Sans', sans-serif;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+.bgt{
+    background-color: #FF9800!important;
+
+}
+.font{
+    font-family: 'Work Sans', sans-serif;
+    font-size: 2rem;
+}
+.font2{
+    font-family: 'Work Sans', sans-serif;
+    font-size: 16px;
+}
+.rounded-4{
+    border-radius: 20px!important;
+}
+.fontgovde{
+    font-family: 'Work Sans', sans-serif;
+    font-size: 25px;
+}
+.footbaslik{
+    font-family: 'Work Sans', sans-serif;
+    font-size: 25px;
+}
+#for1:hover #cizgi1{
+    border-top: 3px solid #FF9800!important;
+}
+#for2:hover #cizgi2{
+    border-top: 3px solid #FF9800!important;
+}
+#for3:hover #cizgi3{
+    border-top: 3px solid #FF9800!important;
+}
+#for4:hover #cizgi4{
+    border-top: 3px solid #FF9800!important;
+}
